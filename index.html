@@ -1,22 +1,114 @@
-<html lang="en"></html>
-    <head>
-        <meta charset="utf-8">
-        <title>Electric Vehicles</title>
-    </head>
-    <body>
-    </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <title>Electric Vehicles</title>
+        <style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #000000;
+            line-height: 1.6;
+        }
 
+header {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            padding: 10px;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+
+        }
+
+        h2 {
+            font-size: 1.4em;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            font-size: 1em;
+        }
+
+
+
+
+
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .activity-col {
+            flex: 1;
+            margin: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .activity-row {
+                flex-direction: column;
+            }
+        }
+.center-image {
+    text-align: center;
+}
+        </style>
+    </head>
+    
+<body>      <div class="container">
+    <header>
+        <div class="center-image">
+<img src="ev/cybertruck.jpeg" width="1000" height="500" alt="teslacybertruck" title="Tesla Cyber Truck">
+</div>
 <h1>Why Electric Vehicles May Not 
     Be as Green as They Seem</h1>
+    <p>Exploring the hidden environmental and social costs of electric vehicles</p>
+    </header>
 
-<p>Exploring the hidden environmental and 
-    social costs of electric vehicles</p>
-<!-- Activities description -->
-<img src="ev/cybertruck.jpeg" alt="teslacybertruck" title="Tesla Cyber Truck">
-<h1>By Hance Mendoza</h1>
+</header>
+<section id="cons">
 
-<h2>The Hidden Environmental Costs of Battery Production
+    <article class="activity-row">
+        <div class="activity-col">
+        
+<h3>The Hidden Environmental Costs of Battery Production
     Overview</h2>
 <p>
     Battery production for EVs has significant environmental impacts, including resource depletion and pollution 
@@ -25,20 +117,32 @@
     is energy-intensive and often relies on non-renewable energy sources, increasing the carbon footprint. The process 
     also generates hazardous waste that is difficult to manage. 
 </p>
+</div>
 
-<!-- The Lake Challenge Activity -->
+</article>
 
-<img src="ev/mine.jpg" alt="mine" title="Lithium and cobalt mine">
+<article class="activity-row">
+    <div class="activity-col">
 
 <h3>Resource Depletion and Pollution</h3>
+
 <p>
     The production of EV batteries requires extensive mining of materials like lithium and cobalt. These mining operations
     can lead to severe resource depletion and environmental pollution. For example, lithium extraction in South America has
     been linked to water shortages and contamination, affecting both local ecosystems and communities. Similarly, cobalt 
     mining in the Democratic Republic of Congo has raised concerns about deforestation and toxic waste.
 </p>
+</div>
+<div class="activity-col">
+<img src="ev/mine.jpg" width="550" height="400" alt="mine" title="Lithium and cobalt mine">
+</div>
+</article>
 
-<img src="ev/battery.jpg" alt="battery" title="Battery Manufacture located in California">
+<article class="activity-row">
+    <div class="activity-col">
+        <img src="ev/junk.jpg"  width="550" height="400" alt="junk" title="EV battery waste">
+        </div>
+    <div class="activity-col">
 
 <h3>Energy-Intensive Manufacturing</h3>
 <p>
@@ -46,17 +150,30 @@
     chemical reactions, consuming substantial amounts of energy, often sourced from non-renewable resources. This energy
     consumption contributes to the overall carbon footprint of EVs, somewhat offsetting their environmental benefits.
 </p>
+</div>
+</article>
 
-<img src="ev/junk.jpg" alt="junk" title="EV battery waste">
+<article class="activity-row">
+    <div class="activity-col">
 
 <h3>Waste Generation</h3>
+
 <p>
     Battery production generates a significant amount of waste, including hazardous materials that are difficult to 
     manage. Proper disposal and recycling of these materials are crucial to minimize environmental harm. However, 
     current recycling methods are not always efficient or widely implemented, leading to further environmental challenges.
 </p>
+</div>
+<div class="activity-col">
+<img src="ev/battery.jpg"  width="550" height="400" alt="battery" title="Battery Manufacture located in California">
+</div>
+</article>
 
-<img src="ev/leafcar.jpeg" alt="leafcar" title="Save the Earth">
+<article class="activity-row">
+    <div class="activity-col">
+        <img src="ev/leafcar.jpeg"  width="550" height="400" alt="leafcar" title="Save the Earth">
+        </div>
+    <div class="activity-col">
 
 <h3>Sustainable Practices</h3>
 <p>
@@ -65,6 +182,10 @@
     energy consumption. Additionally, improved recycling methods are being developed to recover valuable materials from used 
     batteries, reducing the need for new mining operations.
 </p>
+</div>
+</article>
+
+</section>
 
 <h3>Conclusion</h3>
 <p>
@@ -73,5 +194,11 @@
     can mitigate these impacts and contribute to a cleaner, more sustainable future.
 </p>
 
+    <footer>
+            &copy; 2024 True Eco
 
-<a href="https://en.wikipedia.org/wiki/Chuj_people">Chuj ethnicity</a>
+    </footer>
+</div>
+</body> 
+
+</html>    
